@@ -44,11 +44,15 @@ while k <= 6 and k > 0:
         print('На плоскости расположены три точки: A, B, C.\
 Определить, какая из двух последних точек (B или C)\
 расположена ближе к A, и вывести эту точку и ее расстояние от точки A.')
-        a = int(input())
-        b = int(input())
-        c = int(input())
-        sb = abs(a - b)
-        sc = abs(a - c)
+        import math
+        ax = int(input('A(x) = '))
+        ay = int(input('A(y) = '))
+        bx = int(input('B(x) = '))
+        by = int(input('B(y) = '))
+        cx = int(input('C(x) = '))
+        cy = int(input('C(y) = '))
+        sb = math.sqrt((bx - ax) ** 2 + (by - ay) ** 2)
+        sc = math.sqrt((cx - ax) ** 2 + (cy - ay) ** 2)
         if sb == sc:
             print('расстояние до точки А одинаково')
         else:
