@@ -53,20 +53,21 @@ while k <= 6 and k > 0:
         
     if k == 6:
         print('Найти решение системы линейных уравнений вида A1·x + B1·y = C1, A2·x + B2·y = C2')
-        a1 = int(input())
-        b1 = int(input())
-        c1 = int(input())
-        a2 = int(input())
-        b2 = int(input())
-        c2 = int(input())
+        a1 = int(input("А1 = "))
+        b1 = int(input("В1 = "))
+        c1 = int(input("С1 = "))
+        a2 = int(input("А2 = "))
+        b2 = int(input("В2 = "))
+        c2 = int(input("С2 = "))
         x = (c1 * b2 - c2 * b1) / (a1 * b2 - a2 * b1)
         y = (c1 * a2 - c2 * a1) / (b2 * a1 - a2 * b1)
-        if x == 0 or y == 0:
+        if x == -0 or y == -0:
             x = abs(x)
             y = abs(y)
         print("х = ", x, "у = ", y)
         print('введите номер задания')
         k = int(input())
+        
         
             
         
